@@ -83,4 +83,22 @@ public class TaskServiceImpl implements TaskService {
     public List<Task> findAllByPriority(String priority, Pageable pageable) {
         return taskRepository.findAllByPriority(priority, pageable).getContent();
     }
+
+    @Override
+    public List<Task> findByTitleContaining(String title, Pageable pageable) {
+        System.out.println(
+                title
+        );
+        return taskRepository.findByTitleContaining(title, pageable).getContent();
+    }
+
+    @Override
+    public List<Task> findByByDescriptionContaining(String description, Pageable pageable) {
+        return taskRepository.findByByDescriptionContaining(description, pageable).getContent();
+    }
+
+    @Override
+    public List<Task> findByDue_dateLessThanEqual(LocalDate due_date, Pageable pageable) {
+        return taskRepository.findByDue_dateLessThanEqual(due_date, pageable).getContent();
+    }
 }
