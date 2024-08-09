@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com</groupId>
-    <artifactId>GoKapture</artifactId>
+    <artifactId>TaskManagementSystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>GoKapture</name>
-    <description>GoKapture</description>
+    <name>TaskManagementSystem</name>
+    <description>TaskManagementSystem</description>
     <url/>
     <licenses>
         <license/>
