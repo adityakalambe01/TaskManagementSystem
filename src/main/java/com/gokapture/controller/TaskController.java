@@ -1,7 +1,9 @@
 package com.gokapture.controller;
 
 import com.gokapture.entity.Task;
+import com.gokapture.entity.User;
 import com.gokapture.service.TaskService;
+import com.gokapture.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -17,8 +19,18 @@ public class TaskController {
     @Autowired
     private TaskService taskService;
 
+    @Autowired
+    private UserService userService;
+
     @PostMapping
     public ResponseEntity<Task> createTask(@RequestBody Task task) {
+        if (task.getUser() == null) {
+            task.setUser(
+                    userService.findByUsername(
+                            (String) UserController.httpSession.getAttribute("username")
+                    )
+            );
+        }
         return ResponseEntity.ok(taskService.save(task));
     }
 
