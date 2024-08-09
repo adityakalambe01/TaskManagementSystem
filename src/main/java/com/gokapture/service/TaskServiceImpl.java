@@ -50,24 +50,24 @@ public class TaskServiceImpl implements TaskService {
     public Task update(int taskId, Task updatedTask) {
         if (existsById(taskId)){
             Task task = taskRepository.findById(taskId);
-            if (!updatedTask.getTitle().isEmpty()){
+            if (updatedTask.getTitle() != null){
                 task.setTitle(updatedTask.getTitle());
             }
-            if (!updatedTask.getDescription().isEmpty()){
+            if (updatedTask.getDescription() != null){
                 task.setDescription(updatedTask.getDescription());
             }
-            if (!updatedTask.getStatus().isEmpty()){
+            if (updatedTask.getStatus() != null){
                 task.setStatus(updatedTask.getStatus());
             }
-            if (!updatedTask.getPriority().isEmpty()){
+            if (updatedTask.getPriority() != null){
                 task.setPriority(updatedTask.getPriority());
             }
             if (updatedTask.getDue_date() != null){
                 task.setDue_date(updatedTask.getDue_date());
             }
-//            if (updatedTask.getCreated_at() != null){
-//                task.setCreated_at(updatedTask.getCreated_at());
-//            }
+            if (updatedTask.getCreated_at() != null){
+                task.setCreated_at(updatedTask.getCreated_at());
+            }
             task.setUpdated_at(LocalDate.now());
             return taskRepository.save(task);
         }
