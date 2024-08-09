@@ -132,7 +132,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>TaskManagementSystem</finalName>
+        <finalName>taskmanagementsystem</finalName>
     </build>
 
 
