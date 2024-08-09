@@ -1,0 +1,15 @@
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\controller\TaskController.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\controller\UserController.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\entity\Task.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\entity\User.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\GoKaptureApplication.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\repo\TaskRepository.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\repo\UserRepository.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\security\CustomUserDetailsService.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\security\JwtAuthenticationFilter.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\security\JwtTokenProvider.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\security\SecurityConfig.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\service\TaskService.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\service\TaskServiceImpl.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\service\UserService.java
+C:\aditya_personal_practice\TaskManagementSystem\src\main\java\com\gokapture\service\UserServiceImpl.java
