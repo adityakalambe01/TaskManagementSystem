@@ -1,0 +1,15 @@
+com\gokapture\security\SecurityConfig.class
+com\gokapture\repo\TaskRepository.class
+com\gokapture\security\JwtTokenProvider.class
+com\gokapture\repo\UserRepository.class
+com\gokapture\security\CustomUserDetailsService.class
+com\gokapture\service\UserService.class
+com\gokapture\GoKaptureApplication.class
+com\gokapture\service\UserServiceImpl.class
+com\gokapture\entity\Task.class
+com\gokapture\controller\TaskController.class
+com\gokapture\entity\User.class
+com\gokapture\service\TaskServiceImpl.class
+com\gokapture\security\JwtAuthenticationFilter.class
+com\gokapture\controller\UserController.class
+com\gokapture\service\TaskService.class
